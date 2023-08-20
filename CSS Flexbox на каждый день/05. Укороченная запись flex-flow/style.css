@@ -1,0 +1,25 @@
+.container {
+  width: 1000px;
+  height: 600px;
+  background-color: #ccc;
+  display: flex;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+
+  /* 1 вар */
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  /* 2 вар */
+  /* flex-flow: column wrap; так короче */
+}
+
+.element {
+  background-color: beige;
+  width: 32.66%;
+  height: 100px;
+}
+
+div {
+  display: block;
+}
