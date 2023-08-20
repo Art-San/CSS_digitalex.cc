@@ -12,3 +12,45 @@
   width: 100px;
   height: 100px;
 }
+
+div,
+main,
+aside {
+  box-sizing: border-box;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  max-width: 1140px;
+
+  /* margin: 0 auto; */
+}
+
+main {
+  width: 70%;
+  background-color: #ccc;
+  padding: 30px;
+}
+
+aside {
+  width: 30%;
+  background-color: bisque;
+}
+
+@media (max-width: 480px) {
+  .content {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  aside {
+    width: 100%;
+  }
+}
