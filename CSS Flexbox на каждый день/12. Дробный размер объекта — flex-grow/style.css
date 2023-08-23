@@ -1,0 +1,25 @@
+.container {
+  width: 1000px;
+  height: 600px;
+  background-color: #ccc;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  /* flex-direction: column; */
+}
+div {
+  box-sizing: border-box;
+}
+
+.element {
+  background-color: beige;
+  flex: 1;
+}
+
+input {
+  flex-grow: 1;
+}
+
+button {
+  flex-grow: 1;
+}
