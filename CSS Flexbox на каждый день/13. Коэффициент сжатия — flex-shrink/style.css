@@ -1,0 +1,67 @@
+.container {
+  width: 1000px;
+  height: 600px;
+  background-color: #ccc;
+  /* display: flex; */
+
+  /* gap: 10px; */
+}
+
+.element {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+
+.icon {
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(89, 0, 255);
+  border-radius: 500px;
+  flex-shrink: 0;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.iconbox {
+  display: flex;
+  gap: 10px;
+}
+
+.text {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
+}
+
+.el-1 {
+  flex-shrink: 2;
+}
+.el-2 {
+}
+.el-3 {
+}
+.el-4 {
+}
+.el-5 {
+}
+.el-6 {
+}
+.el-7 {
+}
+.el-8 {
+}
+.el-9 {
+}
+.el-10 {
+}
+.el-11 {
+}
+.el-12 {
+}
