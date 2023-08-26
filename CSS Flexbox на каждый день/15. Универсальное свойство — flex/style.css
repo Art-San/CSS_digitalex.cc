@@ -1,0 +1,33 @@
+.container {
+  width: 1000px;
+  height: 600px;
+  background-color: #ccc;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+
+  /* flex-direction: column; */
+}
+div {
+  box-sizing: border-box;
+}
+/* flex: none | [ flex-grow flex-shrink || flex-basis ] */
+/* По умолчанию: flex: 0 1 auto */
+.element {
+  background-color: beige;
+  width: 100px;
+  height: 75px;
+  flex: 0 1 150px;
+}
+
+.el-1 {
+  flex-shrink: 2;
+}
+
+input {
+  flex-grow: 1;
+}
+
+button {
+  flex-grow: 1;
+}
