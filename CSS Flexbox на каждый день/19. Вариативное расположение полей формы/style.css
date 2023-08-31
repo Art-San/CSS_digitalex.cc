@@ -9,7 +9,7 @@
 .formContainer {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
 }
 
 .horizontalField {
@@ -23,8 +23,18 @@
   flex-direction: column;
 }
 
-.textField {
+.tema_div {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+.textarea_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox_div {
+  display: flex;
 }
 
 textarea {
@@ -32,9 +42,87 @@ textarea {
   height: 100px;
 }
 
-.formSubmit {
+.button_div {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 .button {
-  width: 100%;
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 50%;
+
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 55%;
+
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 60%;
+
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 75%;
+
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 85%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .horizontalField {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .horizontalField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+  }
+
+  .horizontalField .el {
+    row-gap: 1px;
+  }
 }
