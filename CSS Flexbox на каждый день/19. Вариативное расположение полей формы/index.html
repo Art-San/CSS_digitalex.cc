@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="formContainer">
+        <div class="horizontalField">
+          <div class="horizontalField el">
+            <label htmlFor="name">Имя</label>
+            <input type="text" id="name" class="input" />
+          </div>
+          <div class="horizontalField el">
+            <label htmlFor="email">Почта</label>
+            <input type="email" id="email" class="input" />
+          </div>
+        </div>
+        <div class="horizontalField el">
+          <label htmlFor="tema"> Тема</label>
+          <input type="text" id="tema" class="input" />
+        </div>
+        <div class="textField">
+          <label for="message">Введите сообщение:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            class="textarea"
+          ></textarea>
+        </div>
+        <div class="">
+          <input type="checkbox" id="checkbox" class="" />
+          <label htmlFor="checkbox"
+            >Даю <a href="#" target="_blank" rel="nofollow">согласие</a> на
+            обработку персональных данных</label
+          >
+        </div>
+
+        <div class="formSubmit">
+          <button class="button">Отправить</button>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <form>
+  <label for="message">Введите сообщение:</label>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea>
+  <br />
+  <input type="submit" value="Отправить" />
+</form> -->

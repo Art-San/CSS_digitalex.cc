@@ -1,0 +1,40 @@
+.container {
+  width: 40%;
+  /* height: 100vh; */
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(190, 220, 238);
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.horizontalField {
+  display: flex;
+  column-gap: 10px;
+}
+
+.el {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textField {
+  width: 100%;
+}
+
+textarea {
+  width: 98.5%;
+  height: 100px;
+}
+
+.formSubmit {
+  width: 100%;
+}
+.button {
+  width: 100%;
+}
