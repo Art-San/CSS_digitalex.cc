@@ -5,6 +5,7 @@
   margin-left: auto;
   margin-right: auto;
   background: rgb(190, 220, 238);
+  padding: 46px 20px 0px 20px;
 }
 
 .horizontalField {
@@ -16,16 +17,14 @@
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 50px;
-  /* column-gap: 10px; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .name_div {
   width: 37%;
   display: flex;
   flex-direction: column;
-  /* padding-right: calc(20px / 2); */
-  /* padding-left: calc(20px / 2); */
 }
 
 .input {
@@ -37,35 +36,32 @@
   width: 37%;
   display: flex;
   flex-direction: column;
-  /* padding-right: calc(20px / 2); */
-  /* padding-left: calc(20px / 2); */
 }
 
 .button_div {
   display: flex;
   width: 20%;
-  /* margin-top: 20px; */
-  /* justify-content: center; */
   height: 38px;
 }
+
 .button {
   height: 100%;
   width: 100%;
 }
 
 .checkbox_div {
-  /* display: flex; */
 }
 
 @media (max-width: 1024px) {
   .container {
-    width: 80%;
+    width: 75%;
   }
 }
 
 @media (max-width: 900px) {
   .container {
     width: 80%;
+    padding: 30px 0px 90px 0px;
   }
   .horizontalField {
     display: flex;
@@ -73,7 +69,8 @@
     align-items: center;
     row-gap: 10px;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 0px;
+    flex-wrap: nowrap;
   }
 
   .name_div {
@@ -81,6 +78,19 @@
   }
 
   .email_dev {
+    width: 70%;
+  }
+  .button_div {
+    margin-top: 15px;
+    width: 30%;
+    height: 100%;
+    order: 1;
+  }
+  .button {
+    height: 36px;
+  }
+  .checkbox_div {
+    display: flex;
     width: 70%;
   }
 }
@@ -95,26 +105,28 @@
   }
 
   .name_div {
-    width: 70%;
+    width: 80%;
   }
 
   .email_dev {
-    width: 70%;
+    width: 80%;
+  }
+
+  .checkbox_div {
+    width: 80%;
   }
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .container {
     width: 90%;
   }
-}
+} */
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   .container {
     width: 85%;
     padding: 30px 10px;
-    margin-top: 30px;
-    padding-left: 0;
   }
 
   .name_div {
@@ -125,21 +137,13 @@
     width: 95%;
   }
 
-  .button_div {
-    margin-top: 15px;
-    width: 70%;
-    height: 100%;
-  }
-  .button {
-    height: 36px;
-  }
-}
+} */
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .container {
     width: 90%;
   }
   .horizontalField {
     padding-top: 30px;
   }
-}
+} */
