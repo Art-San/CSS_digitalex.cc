@@ -1,0 +1,94 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.d-flex {
+  display: flex; /* создаль отдельный класс .d-flex поместили display: flex; и распихали там где это надо */
+}
+
+header {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  z-index: 1;
+}
+
+.cont {
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cont-inner {
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.cont-sub {
+  gap: 20px 30px;
+}
+
+.logo {
+  /* width: 150px; */
+  max-width: 150px;
+  flex-basis: 150px;
+  flex-shrink: 0;
+}
+
+#topMenu ul {
+  column-gap: 35px;
+  align-items: center;
+}
+
+button {
+  border-radius: 6px;
+  background-color: #0158ff;
+  color: #ffff;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  flex-shrink: 0;
+}
+
+button figure svg {
+  fill: #fff;
+  color: #fff;
+  width: 1em;
+}
+
+/* figure {
+  display: flex; // создаль отдельный класс .d-flex поместили display: flex; и распихали там где это надо
+} */
+
+footer {
+  background-color: #012340;
+  font-size: 0.9em;
+  padding: 20px 0;
+}
+
+footer,
+footer a {
+  color: #a9c1eb;
+}
+
+@media (max-width: 850px) {
+  #topMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  button {
+    padding: 10px 12px;
+  }
+  button span,
+  #topMenu {
+    display: none;
+  }
+}
