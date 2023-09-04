@@ -2,6 +2,10 @@ body {
   font-family: Roboto, Arial, sans-serif;
 }
 
+.d-flex {
+  display: flex; /* создаль отдельный класс .d-flex поместили display: flex; и распихали там где это надо */
+}
+
 header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   height: 70px;
@@ -9,7 +13,6 @@ header {
 }
 
 .cont {
-  display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -18,7 +21,6 @@ header {
 
 .cont-inner {
   max-width: 1120px;
-  display: flex;
   width: 100%;
   padding: 0 10px;
 }
@@ -28,7 +30,6 @@ header {
 }
 
 .cont-sub {
-  display: flex;
   gap: 20px 30px;
 }
 
@@ -36,6 +37,12 @@ header {
   /* width: 150px; */
   max-width: 150px;
   flex-basis: 150px;
+  flex-shrink: 0;
+}
+
+#topMenu ul {
+  column-gap: 35px;
+  align-items: center;
 }
 
 button {
@@ -46,6 +53,7 @@ button {
   display: flex;
   align-items: center;
   column-gap: 10px;
+  flex-shrink: 0;
 }
 
 button figure svg {
@@ -54,9 +62,9 @@ button figure svg {
   width: 1em;
 }
 
-figure {
-  display: flex;
-}
+/* figure {
+  display: flex; // создаль отдельный класс .d-flex поместили display: flex; и распихали там где это надо
+} */
 
 footer {
   background-color: #012340;
@@ -67,6 +75,12 @@ footer {
 footer,
 footer a {
   color: #a9c1eb;
+}
+
+@media (max-width: 850px) {
+  #topMenu {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {

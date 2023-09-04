@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="cont">
-      <div class="cont-inner space-between a-items-center">
-        <figure class="logo">
+    <header class="cont d-flex">
+      <div class="cont-inner space-between a-items-center d-flex">
+        <figure class="logo d-flex">
           <svg xmlns="<http://www.w3.org/2000/svg>" viewBox="0 0 160.35 47">
             <defs>
               <style>
@@ -89,8 +89,17 @@
             </g>
           </svg>
         </figure>
-        <button>
-          <figure>
+        <nav id="topMenu" class="d-flex">
+          <ul class="d-flex">
+            <li><a href="">Курсы</a></li>
+            <li><a href="">Библиотека</a></li>
+            <li><a href="">Контакты</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">О проекте</a></li>
+          </ul>
+        </nav>
+        <button class="d-flex">
+          <figure class="d-flex">
             <svg
               xmlns="<http://www.w3.org/2000/svg>"
               xml:space="preserve"
@@ -110,10 +119,10 @@
         </button>
       </div>
     </header>
-    <footer class="cont">
-      <div class="cont-inner a-items-center space-between">
+    <footer class="cont d-flex">
+      <div class="cont-inner a-items-center space-between d-flex">
         <p>&copy; 2017&ndash;2023 Цифровой Алекс</p>
-        <div class="cont-sub">
+        <div class="cont-sub d-flex">
           <a
             href="<http://mysite.com/politika>"
             target="_blank"
