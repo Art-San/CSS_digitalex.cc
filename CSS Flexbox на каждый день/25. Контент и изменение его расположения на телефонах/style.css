@@ -35,6 +35,10 @@ header {
   gap: 20px 30px;
 }
 
+p {
+  margin-bottom: 30px;
+}
+
 .logo {
   /* width: 150px; */
   max-width: 150px;
@@ -68,6 +72,22 @@ button figure svg {
   display: flex; // создаль отдельный класс .d-flex поместили display: flex; и распихали там где это надо
 } */
 
+article {
+  width: 70%;
+  padding: 40px 40px 40px 0px;
+}
+
+aside {
+  width: 30%;
+  background-color: #ebebf0;
+  padding: 40px 30px;
+}
+
+aside naw ul {
+  flex-direction: column;
+  gap: 15px;
+}
+
 footer {
   background-color: #012340;
   font-size: 0.9em;
@@ -83,6 +103,17 @@ footer a {
 @media (max-width: 850px) {
   #topMenu {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  main .cont-inner {
+    flex-direction: column;
+  }
+
+  article,
+  aside {
+    width: 100%;
   }
 }
 
