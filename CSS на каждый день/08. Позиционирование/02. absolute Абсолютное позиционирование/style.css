@@ -16,6 +16,7 @@ header {
   width: 100%;
   background-color: #fff;
   opacity: 80%;
+  /* position: absolute; */
 }
 
 .cont {
@@ -44,7 +45,6 @@ p {
 }
 
 .logo {
-  /* width: 150px; */
   max-width: 150px;
   flex-basis: 150px;
   flex-shrink: 0;
@@ -72,12 +72,14 @@ button figure svg {
   width: 1em;
 }
 
-/* figure {
-  display: flex; // создаль отдельный класс .d-flex поместили display: flex; и распихали там где это надо
-} */
-
 main {
   margin-top: 70px;
+  position: relative;
+}
+
+.p-text {
+  font-size: 20px;
+  color: red;
 }
 article {
   width: 70%;
@@ -85,8 +87,9 @@ article {
 }
 
 .div_but {
-  position: sticky;
-  top: 70px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
 }
 
 aside {
@@ -98,10 +101,6 @@ aside {
 aside naw ul {
   flex-direction: column;
   row-gap: 10px;
-}
-
-ul {
-  position: sticky;
 }
 
 .cont_icon {
