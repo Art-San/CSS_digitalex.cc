@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="d-flex">
+    <figure id="figure_1">
+      <img src="../../img/car.jpeg" alt="White and Red Chevrolet" />
+    </figure>
     <header class="cont d-flex">
       <div class="cont-inner space-between a-items-center d-flex">
         <figure class="logo d-flex">
@@ -91,11 +94,11 @@
         </figure>
         <nav id="topMenu" class="d-flex">
           <ul class="d-flex">
-            <li><a href="">Курсы</a></li>
-            <li><a href="">Библиотека</a></li>
-            <li><a href="">Контакты</a></li>
-            <li><a href="">Блог</a></li>
-            <li><a href="">О проекте</a></li>
+            <li id="menu_item_1"><a href="">Курсы</a></li>
+            <li id="menu_item_2"><a href="">Библиотека</a></li>
+            <li id="menu_item_3"><a href="">Контакты</a></li>
+            <li id="menu_item_4"><a href="">Блог</a></li>
+            <li id="menu_item_5"><a href="">О проекте</a></li>
           </ul>
         </nav>
         <button class="d-flex">
@@ -124,6 +127,10 @@
     <main class="cont d-flex">
       <div class="cont-inner d-flex">
         <article>
+          <!-- <span>Это до</span> -->
+          <h1 class="h1">Это заголовок</h1>
+          <!-- <span>Это после</span> -->
+          <div class="divider">Текст разделителя</div>
           <p class="p-text">
             Кнопка "На жми" имеет position: absolute;, а не улетает она в левый
             верхний угол потому что у main задано position: relative;.
@@ -201,12 +208,12 @@
             libero venenatis faucibus.
           </p>
 
-          <p>
+          <blockquote>
             Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
             Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis
             magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
             nunc,
-          </p>
+          </blockquote>
 
           <p>
             Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
@@ -317,5 +324,8 @@
         </div>
       </div>
     </footer>
+    <figure>
+      <img src="../../img/car.jpeg" alt="White and Red Chevrolet" />
+    </figure>
   </body>
 </html>
