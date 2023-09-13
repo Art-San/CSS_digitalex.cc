@@ -1,0 +1,197 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.d-flex {
+  display: flex; /* создать отдельный класс .d-flex поместили display: flex; и распихали там где это надо */
+}
+
+header {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  /* background: #ffff; */
+  /* opacity: 70%; */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /*размытие для Safari браузер */
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+#topMenu ul li:hover a {
+  color: red;
+}
+
+.cont {
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cont-inner {
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.cont-sub {
+  gap: 20px 30px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.logo {
+  max-width: 150px;
+  flex-basis: 150px;
+  flex-shrink: 0;
+}
+
+#topMenu ul {
+  column-gap: 35px;
+  align-items: center;
+}
+
+button {
+  border-radius: 6px;
+  background-color: #0158ff;
+  color: #ffff;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  flex-shrink: 0;
+}
+
+button figure svg {
+  fill: #fff;
+  color: #fff;
+  width: 1em;
+}
+
+main {
+  margin-top: 70px;
+  position: relative;
+}
+
+.p-text {
+  font-size: 20px;
+  color: red;
+}
+article {
+  width: 70%;
+  padding: 40px 40px 40px 0px;
+}
+
+.div_blok_img {
+  position: relative;
+}
+
+.div_blok_img .img_1,
+.div_blok_img .img_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.div_blok_img .img_3 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.div_blok_img .img_2 {
+  z-index: 1;
+  margin-left: 450px;
+}
+
+.div_but {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+aside {
+  width: 30%;
+  background-color: #ebebf0;
+  padding: 40px 30px;
+}
+
+aside naw ul {
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.cont_icon {
+  gap: 10px;
+  flex-direction: column;
+  position: fixed;
+  right: 5%;
+  top: 40%;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+footer {
+  background-color: #012340;
+  font-size: 0.9em;
+  padding: 20px 0;
+  margin-top: auto;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer,
+footer a {
+  color: #a9c1eb;
+}
+
+@media (max-width: 850px) {
+  #topMenu {
+    display: none;
+  }
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  main .cont-inner {
+    flex-direction: column;
+  }
+
+  article,
+  aside {
+    width: 100%;
+  }
+  .cont_icon {
+    right: 2%;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  button {
+    padding: 10px 12px;
+  }
+  button span,
+  #topMenu {
+    display: none;
+  }
+}
